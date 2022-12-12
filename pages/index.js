@@ -4,7 +4,7 @@ import Services from "./component/UI/Services";
 import "remixicon/fonts/remixicon.css";
 import About from "./component/UI/About";
 import Header from "../pages/component/Header/Header";
-import Footer from "../pages/component/Header/Footer";
+import Footer from "../pages/component/Footer/Footer";
 const Home = () => {
   return (
     <Fragment>
