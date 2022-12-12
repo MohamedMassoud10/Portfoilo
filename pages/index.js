@@ -3,6 +3,8 @@ import Hero from "./component/UI/Hero";
 import Services from "./component/UI/Services";
 import "remixicon/fonts/remixicon.css";
 import About from "./component/UI/About";
+import Header from "../pages/component/Header/Header";
+import Footer from "../pages/component/Header/Footer";
 const Home = () => {
   return (
     <Fragment>
