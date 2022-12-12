@@ -6,9 +6,11 @@ import About from "./component/UI/About";
 const Home = () => {
   return (
     <Fragment>
+      <Header />
       <Hero />
       <Services />
       <About />
+      <Footer />
     </Fragment>
   );
 };
