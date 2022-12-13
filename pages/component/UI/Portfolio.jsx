@@ -5,7 +5,6 @@ import PortfolioItem from "./PortfolioItem";
 export default function Portfolio() {
   const portfolio = [
     {
-      id: "06",
       title: "Portfolio",
       img: "/images/portfolio.png",
       category: "MyProjects",
@@ -13,7 +12,6 @@ export default function Portfolio() {
       liveUrl: "https://massoud-one.vercel.app/",
     },
     {
-      id: "01",
       title: "E-Commerce Website",
       img: "/images/E-commerce.png",
       category: "MyProjects",
@@ -22,7 +20,6 @@ export default function Portfolio() {
     },
 
     {
-      id: "02",
       title: "Landing page",
       img: "/images/landingPage.png",
       category: "MyProjects",
@@ -31,7 +28,6 @@ export default function Portfolio() {
     },
 
     {
-      id: "04",
       title: "Quiz Application",
       img: "/images/QuizaApp.png",
       category: "MyProjects",
@@ -40,7 +36,6 @@ export default function Portfolio() {
     },
 
     {
-      id: "03",
       title: "Note Application",
       img: "/images/NoteAPP.png",
       category: "MyProjects",
@@ -48,7 +43,6 @@ export default function Portfolio() {
       liveUrl: "https://react-note-app-z720.onrender.com/",
     },
     {
-      id: "05",
       title: "to do list Application",
       img: "/images/ToDOListAPP.png",
       category: "MyProjects",
@@ -57,7 +51,6 @@ export default function Portfolio() {
     },
 
     {
-      id: "06",
       title: "Tic Tac Toe Game",
       img: "/images/tictactoe.png",
       category: "MyProjects",
@@ -71,7 +64,7 @@ export default function Portfolio() {
         <div className={`${classes.portfolio__content}`}>
           <SectionSubtitle subtitle=" My portfolio" />
           <h4 className="mt-4">Some of my distinguished works</h4>
-          <div className={`${classes.portfolio__works}`} key={item.id}>
+          <div className={`${classes.portfolio__works}`}>
             {portfolio.map((item) => (
               <div>
                 <PortfolioItem item={item} />
