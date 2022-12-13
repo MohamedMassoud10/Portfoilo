@@ -24,7 +24,7 @@ export default function PortfolioItem(props) {
           <Link href={liveUrl}>Launch</Link>
         </button>
         <div className={`${classes.portfolio__live} `}>
-          <Link target="_blank">
+          <Link href="/" target="_blank">
             <i class="ri-github-fill"></i>
           </Link>
         </div>
