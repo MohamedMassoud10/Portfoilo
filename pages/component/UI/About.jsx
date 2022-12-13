@@ -22,7 +22,7 @@ const About = () => {
               neque asperiores temporibus quo saepe odio, esse labore libero
               obcaecati quidem explicabo blanditiis deleniti ex vitae ratione
               ullam fugiat dicta eum sint officiis porro illum quia. Error quam
-              cum excepturi beatae. MAssoud
+              cum excepturi beatae.
             </p>
 
             <div>
