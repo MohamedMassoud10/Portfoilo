@@ -3,7 +3,7 @@ import classes from "../../../styles/portfolio-item.module.css";
 import Link from "next/link";
 import Image from "next/image";
 export default function PortfolioItem(props) {
-  const { title, img, liveUrl, keyword, gitHibURL } = props.item;
+  const { title, img, liveUrl, keyword } = props.item;
   return (
     <div className={`${classes.portfolio__item}`}>
       <div className={`${classes.item}`}>
@@ -24,7 +24,7 @@ export default function PortfolioItem(props) {
           <Link href={liveUrl}>Launch</Link>
         </button>
         <div className={`${classes.portfolio__live} `}>
-          <Link href={gitHibURL} target="_blank">
+          <Link target="_blank">
             <i class="ri-github-fill"></i>
           </Link>
         </div>

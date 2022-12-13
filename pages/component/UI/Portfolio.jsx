@@ -11,7 +11,6 @@ export default function Portfolio() {
       category: "MyProjects",
       keyword: ["HTML", "CSS", "JS", "Next.js"],
       liveUrl: "https://massoud-one.vercel.app/",
-      gitHibURL: "https://github.com/MohamedMassoud10/Portfoilo",
     },
     {
       id: "01",
@@ -20,8 +19,6 @@ export default function Portfolio() {
       category: "MyProjects",
       keyword: ["HTML", "CSS", "JS", "React.JS"],
       liveUrl: "https://sneakerssite.onrender.com/",
-      gitHibURL:
-        "https://github.com/MohamedMassoud10/E-commerce-with-react-and-redux-toolkit",
     },
 
     {
@@ -31,7 +28,6 @@ export default function Portfolio() {
       category: "MyProjects",
       keyword: ["HTML", "CSS", "JS", "React.JS"],
       liveUrl: "https://kasper-16um.onrender.com/",
-      gitHibURL: "https://github.com/MohamedMassoud10/kasper",
     },
 
     {
@@ -41,7 +37,6 @@ export default function Portfolio() {
       category: "MyProjects",
       keyword: ["HTML", "CSS", "JS"],
       liveUrl: "https://quiz-app-using-react.onrender.com/",
-      gitHibURL: "https://github.com/MohamedMassoud10/Quiz-App-using-react.js",
     },
 
     {
@@ -51,7 +46,6 @@ export default function Portfolio() {
       category: "MyProjects",
       keyword: ["HTML", "CSS", "JS"],
       liveUrl: "https://react-note-app-z720.onrender.com/",
-      gitHibURL: "https://github.com/MohamedMassoud10/React-Note-App",
     },
     {
       id: "05",
@@ -60,7 +54,6 @@ export default function Portfolio() {
       category: "MyProjects",
       keyword: ["HTML", "CSS", "JS"],
       liveUrl: "https://mohamedmassoud10.github.io/to-do-list",
-      gitHibURL: "https://github.com/MohamedMassoud10/to-do-list",
     },
 
     {
@@ -70,7 +63,6 @@ export default function Portfolio() {
       category: "MyProjects",
       keyword: ["HTML", "CSS", "JS"],
       liveUrl: "https://mohamedmassoud10.github.io/tic-tac-toe-game/",
-      gitHibURL: "https://github.com/MohamedMassoud10/tic-tac-toe-game",
     },
   ];
   return (
