@@ -3,6 +3,7 @@
   font-weight: 400;
   margin-left: 40px;
   position: relative;
+  font-size: 1.25rem;
 }
 
 .section__subtitle::before {

@@ -22,13 +22,17 @@ h5,
 h6 {
   color: #fff;
 }
-h2 {
-  font-size: 2.5rem;
+h3 {
+  font-size: 2rem;
 }
-
+h6 {
+  font-size: 1rem;
+  font-weight: 400;
+}
 * {
   box-sizing: border-box;
   background-color: #0e1630;
+  scroll-behavior: smooth;
 }
 
 @media (prefers-color-scheme: light) {

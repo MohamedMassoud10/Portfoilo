@@ -3,6 +3,9 @@
   height: 80px;
   line-height: 80px;
 }
+.header h1 {
+  font-size: 2rem;
+}
 /* Small */
 @media (min-width: 768px) {
   .container {
@@ -20,7 +23,7 @@
 /* Large */
 @media (min-width: 1200px) {
   .container {
-    width: 900px;
+    width: 1140px;
     margin: auto;
   }
 }

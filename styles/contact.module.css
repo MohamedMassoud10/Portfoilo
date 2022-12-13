@@ -1,0 +1,19 @@
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+    margin: auto;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+    margin: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+    margin: auto;
+  }
+}

@@ -17,7 +17,7 @@ const Header = () => {
       display: "Services",
     },
     {
-      path: "#portfolio",
+      path: "/component/UI/Portfolio",
       display: "Portfolio",
     },
     {
