@@ -1,4 +1,4 @@
-let portfolio = [
+const portfolio = [
   {
     id: "01",
     title: "Portfolio",
