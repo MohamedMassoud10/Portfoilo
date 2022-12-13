@@ -17,13 +17,7 @@ const About = () => {
             <SectionSubtitle subtitle="About me" />
             <h3>I&apos;m here</h3>
             <h3>to help your next project</h3>
-            <p>
-              I have learned a lot of technologies, created many cool websites,
-              collaborated with great developers and contributed to open source
-              projects. So I&apos;m always seeking to have an opportunity that
-              matches my skills, to make the best use of all what I have
-              learned.
-            </p>
+            <p>Mohamed</p>
 
             <div>
               <div>
