@@ -16,5 +16,9 @@
     "react-dom": "18.2.0",
     "react-icons": "^4.7.1",
     "remixicon": "^2.5.0"
+  },
+  "devDependencies": {
+    "@next/eslint-plugin-next": "^13.0.6",
+    "eslint-config-prettier": "^8.5.0"
   }
 }
