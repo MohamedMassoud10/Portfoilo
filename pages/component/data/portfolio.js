@@ -1,4 +1,4 @@
-export default portfolio = [
+let portfolio = [
   {
     id: "01",
     title: "Portfolio",
@@ -60,3 +60,5 @@ export default portfolio = [
     liveUrl: "https://mohamedmassoud10.github.io/tic-tac-toe-game/",
   },
 ];
+
+export default portfolio;
