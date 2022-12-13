@@ -18,11 +18,11 @@ const About = () => {
             <h3>I&apos;m here</h3>
             <h3>to help your next project</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-              neque asperiores temporibus quo saepe odio, esse labore libero
-              obcaecati quidem explicabo blanditiis deleniti ex vitae ratione
-              ullam fugiat dicta eum sint officiis porro illum quia. Error quam
-              cum excepturi beatae.
+              I have learned a lot of technologies, created many cool websites,
+              collaborated with great developers and contributed to open source
+              projects. So I'm always seeking to have an opportunity that
+              matches my skills, to make the best use of all what I have
+              learned.
             </p>
 
             <div>

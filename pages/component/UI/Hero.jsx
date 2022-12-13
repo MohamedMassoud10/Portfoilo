@@ -22,7 +22,7 @@ export default function Hero() {
             <h2 className={`${classes.typing}`}>I am Mohamed Massoud</h2>
             <h5>Front Developer</h5>
             <p>
-              I am a Self-motivated Front-end Web Developer with a strong
+              I&apos;am a Self-motivated Front-end Web Developer with a strong
               ambition to learn and discover the newest cutting-edge
               methodologies to build high-performance websites. Capable of
               self-managing in addition to collaborating with others in group
