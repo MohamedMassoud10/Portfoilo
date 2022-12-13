@@ -11,7 +11,7 @@ export default function Portfolio() {
       category: "MyProjects",
       keyword: ["HTML", "CSS", "JS", "Next.js"],
       liveUrl: "https://massoud-one.vercel.app/",
-      gitHibURL: "https://github.com/MohamedMassoud10/Portfoilo",
+      gitHibURL: "https://github.com/MohamedMassoud10?tab=repositories",
     },
     {
       id: "01",
