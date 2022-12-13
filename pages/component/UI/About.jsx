@@ -20,7 +20,7 @@ const About = () => {
             <p>
               I have learned a lot of technologies, created many cool websites,
               collaborated with great developers and contributed to open source
-              projects. So I'm always seeking to have an opportunity that
+              projects. So I&apos;m always seeking to have an opportunity that
               matches my skills, to make the best use of all what I have
               learned.
             </p>
