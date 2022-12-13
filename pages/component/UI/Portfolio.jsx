@@ -71,7 +71,7 @@ export default function Portfolio() {
         <div className={`${classes.portfolio__content}`}>
           <SectionSubtitle subtitle=" My portfolio" />
           <h4 className="mt-4">Some of my distinguished works</h4>
-          <div className={`${classes.portfolio__works}`}>
+          <div className={`${classes.portfolio__works}`} key={item.id}>
             {portfolio.map((item) => (
               <div>
                 <PortfolioItem item={item} />
