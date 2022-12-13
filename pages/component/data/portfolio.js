@@ -1,5 +1,6 @@
 const portfolio = [
   {
+    id: "01",
     title: "Portfolio",
     img: "/images/portfolio.png",
     category: "MyProjects",
@@ -7,6 +8,7 @@ const portfolio = [
     liveUrl: "https://massoud-one.vercel.app/",
   },
   {
+    id: "02",
     title: "E-Commerce Website",
     img: "/images/E-commerce.png",
     category: "MyProjects",
@@ -15,6 +17,7 @@ const portfolio = [
   },
 
   {
+    id: "03",
     title: "Landing page",
     img: "/images/landingPage.png",
     category: "MyProjects",
@@ -23,6 +26,7 @@ const portfolio = [
   },
 
   {
+    id: "04",
     title: "Quiz Application",
     img: "/images/QuizaApp.png",
     category: "MyProjects",
@@ -31,6 +35,7 @@ const portfolio = [
   },
 
   {
+    id: "05",
     title: "Note Application",
     img: "/images/NoteAPP.png",
     category: "MyProjects",
@@ -38,6 +43,7 @@ const portfolio = [
     liveUrl: "https://react-note-app-z720.onrender.com/",
   },
   {
+    id: "06",
     title: "to do list Application",
     img: "/images/ToDOListAPP.png",
     category: "MyProjects",
@@ -46,6 +52,7 @@ const portfolio = [
   },
 
   {
+    id: "07",
     title: "Tic Tac Toe Game",
     img: "/images/tictactoe.png",
     category: "MyProjects",

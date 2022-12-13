@@ -12,7 +12,7 @@ export default function Portfolio() {
           <h4 className="mt-4">Some of my distinguished works</h4>
           <div className={`${classes.portfolio__works}`}>
             {portfolio.map((item) => (
-              <div>
+              <div key={item.id}>
                 <PortfolioItem item={item} />
               </div>
             ))}
