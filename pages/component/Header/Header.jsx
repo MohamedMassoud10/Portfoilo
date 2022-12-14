@@ -27,7 +27,7 @@ const NAVIGATION_LINKS = [
 ];
 const Header = () => {
   const headerRef = useRef(null);
-
+  const menuRef = useRef(null);
   const headerFunc = () => {
     if (
       document.body.scrollTop > 80 ||
@@ -44,6 +44,8 @@ const Header = () => {
 
     return () => window.removeEventListener("scroll", headerFunc);
   }, []);
+  const toggleMenu = () =>
+    menuRef.current.classList.toggle(`${styles.menu__active}`);
   return (
     <header className={`${styles.header}`} ref={headerRef}>
       <div className={`${styles.container}`}>
@@ -53,7 +55,11 @@ const Header = () => {
               <span>M</span>assoud
             </h1>
           </div>
-          <div className={`${styles.navigation}`}>
+          <div
+            className={`${styles.navigation}`}
+            ref={menuRef}
+            onClick={toggleMenu}
+          >
             <div className={`${styles.nav__menu}`}>
               {NAVIGATION_LINKS.map((item, index) => (
                 <Link href={item.path} key={index}>
@@ -68,6 +74,9 @@ const Header = () => {
               </div>
             </div>
           </div>
+          <span className={`${styles.mobile__menu}`}>
+            <i className="ri-menu-line" onClick={toggleMenu}></i>
+          </span>
         </nav>
       </div>
     </header>

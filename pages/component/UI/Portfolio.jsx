@@ -2,11 +2,9 @@ import React from "react";
 import SectionSubtitle from "./SectionSubtitle";
 import classes from "../../../styles/portfolio.module.css";
 import PortfolioItem from "./PortfolioItem";
-import handler from "../../api/data/alldata";
 export default function Portfolio() {
   const [data, setData] = React.useState([]);
   const [loaded, setLoaded] = React.useState(false);
-  console.log(data);
   React.useEffect(() => {
     if (!loaded) {
       fetch("../../api/data/alldata")
@@ -26,7 +24,12 @@ export default function Portfolio() {
           <div className={`${classes.portfolio__works}`}>
             {data.map((item) => (
               <div key={item.id}>
-                <PortfolioItem item={item} />
+                <PortfolioItem
+                  title={item.title}
+                  img={item.img}
+                  keyword={item.keyword}
+                  liveUrl={item.liveUrl}
+                />
               </div>
             ))}
           </div>

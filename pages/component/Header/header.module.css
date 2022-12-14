@@ -15,6 +15,9 @@
     margin: auto;
   }
 }
+.nav .header_mobile__menu {
+  display: none;
+}
 /* Medium */
 @media (min-width: 992px) {
   .container {
@@ -123,4 +126,11 @@
   .header .container {
     padding: 0 15px;
   }
+}
+.mobile__menu {
+  display: none;
+}
+.mobile__menu i {
+  color: white;
+  cursor: pointer;
 }
