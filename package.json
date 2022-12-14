@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^13.0.6",
-    "eslint-config-prettier": "^8.5.0"
+    "eslint-config-prettier": "^8.5.0",
+    "kill-port": "^2.0.1"
   }
 }

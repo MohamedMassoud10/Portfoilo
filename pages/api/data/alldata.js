@@ -52,7 +52,7 @@ export default function handler(req, res) {
     {
       id: "06",
       title: "to do list Application",
-      img: "/images/ToDOListAPP.png",
+      img: "/images/toDoList.png",
       category: "MyProjects",
       keyword: ["HTML", "CSS", "JS"],
       liveUrl: "https://mohamedmassoud10.github.io/to-do-list",

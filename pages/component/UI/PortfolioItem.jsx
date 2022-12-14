@@ -9,7 +9,6 @@ export default function PortfolioItem({
   keyword = [],
   github = "",
 }) {
-  console.log(github);
   return (
     <div className={`${classes.portfolio__item}`}>
       <div className={`${classes.item}`}>

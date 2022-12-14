@@ -37,7 +37,12 @@ export default function Hero() {
                 <Link href="#">Hire me</Link>
               </button>
               <button className={`${classes.second__btn}`}>
-                <Link href="#">Download CV</Link>
+                <Link
+                  href="https://drive.google.com/file/d/1iFzI_MDyb4KZtPnVXAyQkFRoqZ-emn3h/view?usp=sharing"
+                  target="_blank"
+                >
+                  View CV
+                </Link>
               </button>
             </div>
           </div>

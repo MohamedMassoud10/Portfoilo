@@ -1,0 +1,35 @@
+.form__group input,
+.form__group textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #171f38;
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.form__group input::placeholder,
+.form__group textarea::placeholder {
+  font-size: 0.8rem;
+  color: #808dad;
+}
+
+.form button {
+  color: #01d293;
+}
+.form__group textarea {
+  resize: none;
+}
+.main__btn {
+  background-color: #171f38 !important;
+  padding: 7px 20px !important;
+  border: 1px solid #01d293;
+  cursor: pointer;
+}
+.main__btn a {
+  text-decoration: none;
+  color: #01d293;
+  background: transparent !important;
+}
