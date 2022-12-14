@@ -32,7 +32,6 @@ h6 {
 * {
   box-sizing: border-box;
   background-color: #0e1630;
-  scroll-behavior: smooth;
 }
 
 @media (prefers-color-scheme: light) {

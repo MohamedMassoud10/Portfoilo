@@ -20,7 +20,7 @@ export default function Hero() {
           <div className={`${classes.hero__content}`}>
             <SectionSubtitle subtitle="Hello" />
             <h2 className={`${classes.typing}`}>I am Mohamed Massoud</h2>
-            <h5>Front Developer</h5>
+            <h5>Frontend Developer</h5>
             <p>
               I&apos;am a Self-motivated Front-end Web Developer with a strong
               ambition to learn and discover the newest cutting-edge
