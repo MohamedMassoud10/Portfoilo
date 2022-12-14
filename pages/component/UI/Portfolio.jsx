@@ -71,7 +71,7 @@ export default function Portfolio() {
     return () => {
       setData(portfolio);
     };
-  }, []);
+  }, [data]);
   return (
     <div id="portfolio">
       <div className={`${classes.container}`}>
