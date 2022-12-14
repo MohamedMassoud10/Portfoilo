@@ -2,31 +2,50 @@ import React from "react";
 import styles from "./header.module.css";
 import Link from "next/link";
 import { BsFillTelephoneFill } from "react-icons/bs";
+import { useRef, useEffect } from "react";
+const NAVIGATION_LINKS = [
+  {
+    path: "/",
+    display: "Home",
+  },
+  {
+    path: "#about",
+    display: "About",
+  },
+  {
+    path: "#services",
+    display: "Services",
+  },
+  {
+    path: "#portfolio",
+    display: "Portfolio",
+  },
+  {
+    path: "#contact",
+    display: "Contact",
+  },
+];
 const Header = () => {
-  const NAVIGATION_LINKS = [
-    {
-      path: "/",
-      display: "Home",
-    },
-    {
-      path: "#about",
-      display: "About",
-    },
-    {
-      path: "#services",
-      display: "Services",
-    },
-    {
-      path: "#portfolio",
-      display: "Portfolio",
-    },
-    {
-      path: "#contact",
-      display: "Contact",
-    },
-  ];
+  const headerRef = useRef(null);
+
+  const headerFunc = () => {
+    if (
+      document.body.scrollTop > 80 ||
+      document.documentElement.scrollTop > 80
+    ) {
+      headerRef.current.classList.add(`${styles.header__sticky}`);
+    } else {
+      headerRef.current.classList.remove(`${styles.header__sticky}`);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", headerFunc);
+
+    return () => window.removeEventListener("scroll", headerFunc);
+  }, []);
   return (
-    <header className={`${styles.header}`}>
+    <header className={`${styles.header}`} ref={headerRef}>
       <div className={`${styles.container}`}>
         <nav className={`${styles.nav}`}>
           <div className={`${styles.logo}`}>
