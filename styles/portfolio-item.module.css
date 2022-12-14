@@ -83,7 +83,9 @@
 .portfolio__live a i {
   background: #171f38;
   color: white;
-  font-size: 32px;
+  font-size: 21px;
+  display: flex;
+  align-items: center;
 }
 @media only screen and (max-width: 768px) {
   .portfolio__item {

@@ -7,7 +7,9 @@ export default function PortfolioItem({
   img = "",
   liveUrl = "",
   keyword = [],
+  github = "",
 }) {
+  console.log(github);
   return (
     <div className={`${classes.portfolio__item}`}>
       <div className={`${classes.item}`}>
@@ -28,8 +30,8 @@ export default function PortfolioItem({
           <Link href={liveUrl}>Launch</Link>
         </button>
         <div className={`${classes.portfolio__live} `}>
-          <Link href="/" target="_blank">
-            <i class="ri-github-fill"></i>
+          <Link href={github} target="_blank">
+            <i class="ri-github-fill">Repo</i>
           </Link>
         </div>
       </div>

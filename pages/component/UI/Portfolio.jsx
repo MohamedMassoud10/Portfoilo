@@ -15,6 +15,7 @@ export default function Portfolio() {
         });
     }
   }, [loaded]);
+  console.log(data);
   return (
     <div id="portfolio">
       <div className={`${classes.container}`}>
@@ -29,6 +30,7 @@ export default function Portfolio() {
                   img={item.img}
                   keyword={item.keyword}
                   liveUrl={item.liveUrl}
+                  github={item.github}
                 />
               </div>
             ))}

@@ -7,6 +7,7 @@ export default function handler(req, res) {
       category: "MyProjects",
       keyword: ["HTML", "CSS", "JS", "Next.js"],
       liveUrl: "https://massoud-one.vercel.app/",
+      github: "https://github.com/MohamedMassoud10/Portfoilo",
     },
     {
       id: "02",
@@ -15,6 +16,8 @@ export default function handler(req, res) {
       category: "MyProjects",
       keyword: ["HTML", "CSS", "JS", "React.JS"],
       liveUrl: "https://sneakerssite.onrender.com/",
+      github:
+        "https://github.com/MohamedMassoud10/E-commerce-with-react-and-redux-toolkit",
     },
 
     {
@@ -24,6 +27,7 @@ export default function handler(req, res) {
       category: "MyProjects",
       keyword: ["HTML", "CSS", "JS", "React.JS"],
       liveUrl: "https://kasper-16um.onrender.com/",
+      github: "https://github.com/MohamedMassoud10/kasper",
     },
 
     {
@@ -33,6 +37,7 @@ export default function handler(req, res) {
       category: "MyProjects",
       keyword: ["HTML", "CSS", "JS"],
       liveUrl: "https://quiz-app-using-react.onrender.com/",
+      github: "https://github.com/MohamedMassoud10/Quiz-App-using-react.js",
     },
 
     {
@@ -42,6 +47,7 @@ export default function handler(req, res) {
       category: "MyProjects",
       keyword: ["HTML", "CSS", "JS"],
       liveUrl: "https://react-note-app-z720.onrender.com/",
+      github: "https://github.com/MohamedMassoud10/React-Note-App",
     },
     {
       id: "06",
@@ -50,6 +56,7 @@ export default function handler(req, res) {
       category: "MyProjects",
       keyword: ["HTML", "CSS", "JS"],
       liveUrl: "https://mohamedmassoud10.github.io/to-do-list",
+      github: "https://github.com/MohamedMassoud10/to-do-list",
     },
 
     {
@@ -59,6 +66,7 @@ export default function handler(req, res) {
       category: "MyProjects",
       keyword: ["HTML", "CSS", "JS"],
       liveUrl: "https://mohamedmassoud10.github.io/tic-tac-toe-game/",
+      github: "https://github.com/MohamedMassoud10/tic-tac-toe-game",
     },
   ]);
 }
