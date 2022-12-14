@@ -37,7 +37,7 @@ const portfolio = [
   {
     id: "05",
     title: "Note Application",
-    img: "/images/NoteAPP.png",
+    img: "/images/noteAP.png",
     category: "MyProjects",
     keyword: ["HTML", "CSS", "JS"],
     liveUrl: "https://react-note-app-z720.onrender.com/",

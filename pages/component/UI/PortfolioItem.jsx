@@ -16,7 +16,7 @@ export default function PortfolioItem(props) {
       </div>
 
       <div className={`${classes.portfolio__img}`}>
-        <Image alt="portfolio-img" src={img} width="400" height="250" />
+        <Image alt="portfolio-img" src={img} width="380" height="207" />
       </div>
 
       <div className={`${classes.portfolio__live} `}>
