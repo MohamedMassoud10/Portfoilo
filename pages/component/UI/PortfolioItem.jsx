@@ -3,7 +3,7 @@ import classes from "../../../styles/portfolio-item.module.css";
 import Link from "next/link";
 import Image from "next/image";
 export default function PortfolioItem(props) {
-  const { title = "", img = "", liveUrl = "", keyword = [] } = props.item;
+  const { title = null, img = null, liveUrl = null, keyword = [] } = props.item;
   return (
     <div className={`${classes.portfolio__item}`}>
       <div className={`${classes.item}`}>
