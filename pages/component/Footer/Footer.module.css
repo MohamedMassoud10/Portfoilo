@@ -1,0 +1,20 @@
+.footer .textRight {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #808dad;
+  box-shadow: -1px -5px 4px -5px #01d29344 !important;
+}
+.footer .textRight svg {
+  margin: 0 10px;
+}
+@media (max-width: 667px) {
+  .footer .textRight {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    padding: 39px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,95 @@
+.portfolio__item {
+  background: #171f38;
+  padding: 0px 20px 20px 20px;
+  padding-top: 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  transition: 1s;
+}
+
+.portfolio__item h6 {
+  color: #01d293;
+  margin-bottom: 20px;
+  background: transparent;
+}
+
+.portfolio__img {
+  margin-top: 30px;
+
+  background: transparent;
+}
+
+.portfolio__img img {
+  border-radius: 10px;
+}
+
+.portfolio__keyword {
+  padding: 5px 10px;
+  color: #fff;
+  background: #808dad68;
+  font-size: 0.7rem;
+  margin-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.portfolio__live {
+  margin-left: -100px;
+  margin-top: 30px;
+  display: none;
+  background: transparent;
+  transition: 4s;
+}
+
+.portfolio__item:hover .portfolio__live {
+  margin-left: 0;
+  display: block;
+  transition: 1s;
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (max-width: 576px) {
+  .portfolio__img img {
+    width: 100% !important;
+  }
+}
+.portfolio__item .item {
+  background: transparent;
+}
+.portfolio__img img {
+  width: 100%;
+}
+.main__btn {
+  background-color: #171f38;
+  padding: 7px 20px !important;
+  border: 1px solid #01d293;
+  transition: 1s;
+  cursor: pointer;
+  margin-top: 25px;
+}
+.main__btn:hover {
+  background-color: #13cc41c7;
+}
+.main__btn:hover a {
+  color: white;
+}
+.main__btn a {
+  text-decoration: none;
+  color: #01d293;
+  background: transparent !important;
+}
+.portfolio__live a i {
+  background: #171f38;
+  color: white;
+  font-size: 21px;
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 768px) {
+  .portfolio__item {
+    margin: 0 12px;
+  }
+}

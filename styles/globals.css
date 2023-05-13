@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Quicksand:wght@300;400;500;600;700&display=swap");
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+p {
+  color: #808dad;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #fff;
+}
+h3 {
+  font-size: 2rem;
+}
+h6 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+* {
+  box-sizing: border-box;
+  background-color: #0e1630;
+}
+
+@media (prefers-color-scheme: light) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: white;
+  }
+}
+section {
+  padding-top: 150px;
+}
+footer {
+  padding: 10px 0 10px 0;
+}
+.main__btn {
+  background-color: #171f38 !important;
+  padding: 1px 20px !important;
+  border: 1px solid #01d293;
+}
+.main__btn a {
+  text-decoration: none;
+  color: #01d293;
+  background: transparent !important;
+}
+.second__btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 7px 25px;
+}
+.second__btn a {
+  color: #01d293 !important;
+}
+.main__btn a:hover,
+.second__btn a:hover {
+  color: #01d293;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  background: #808dad;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2em;
+  background: #171f38;
+}

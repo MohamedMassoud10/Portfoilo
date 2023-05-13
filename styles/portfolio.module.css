@@ -1,0 +1,28 @@
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+    margin: auto;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+    margin: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+    margin: auto;
+  }
+}
+.portfolio__content .portfolio__works {
+  grid-column-gap: 70px;
+  grid-row-gap: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+}
+.portfolio__content {
+  margin: 100px 15px;
+}

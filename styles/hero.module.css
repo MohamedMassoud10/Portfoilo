@@ -1,0 +1,143 @@
+.hero {
+  padding-top: 60px;
+}
+.hero__content h5 {
+  color: #808dad;
+  font-weight: 400;
+}
+.hero__content {
+  padding-top: 50px;
+  width: 30rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+    margin: auto;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+    margin: auto;
+  }
+}
+@media (max-width: 992px) {
+  .sectionContent {
+    flex-direction: column;
+    margin: 0 15px;
+  }
+  .hero__content {
+    width: 100%;
+  }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+    margin: auto;
+  }
+}
+.typing {
+  position: relative;
+}
+@media (max-width: 667px) {
+  .typing {
+    font-size: 29px;
+  }
+}
+.typing::after {
+  content: "|";
+  position: absolute;
+  right: 0;
+  width: 100%;
+  color: white;
+  background: #151a2d;
+  animation: typing 5s steps(20) infinite, caret 1s infinite;
+}
+@keyframes typing {
+  to {
+    width: 0;
+  }
+}
+@keyframes caret {
+  50% {
+    color: transparent;
+  }
+}
+.main__btn {
+  background-color: #171f38 !important;
+  padding: 7px 20px !important;
+  border: 1px solid #01d293;
+  cursor: pointer;
+}
+.main__btn a {
+  text-decoration: none;
+  color: #01d293;
+  background: transparent !important;
+}
+.second__btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 7px 25px;
+}
+.second__btn a {
+  color: #01d293 !important;
+  border-bottom: 1px solid;
+}
+.main__btn a:hover,
+.second__btn a:hover {
+  color: #01d293;
+}
+.hero .container .sectionContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 110px;
+}
+.hero__image {
+  position: relative;
+}
+.hero__image img {
+  border-radius: 50px 5px 5px 5px;
+}
+
+.hero__skills {
+  text-align: left;
+  width: 106px;
+  padding: 4px 10px;
+  position: absolute;
+  top: 50%;
+  left: -24%;
+  transform: translateY(-50%);
+  border-radius: 5px;
+  background: #0e163099;
+  z-index: 10;
+  border: 0.5px solid #ffffff2e;
+}
+
+.hero__skills h6 {
+  background: transparent;
+  color: #fff;
+}
+
+.hero__skills span i {
+  color: #01d293;
+  background: transparent;
+}
+
+.hero__skills span {
+  background: transparent;
+}
+.skills__icons {
+  color: white;
+  font-size: 21px;
+  width: 63px;
+  text-align: center;
+}
+.skills__icons svg {
+  margin-right: 0px;
+}
