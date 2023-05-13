@@ -27,7 +27,7 @@ export default function Contact() {
                 <span>
                   <i className="ri-mail-line"></i>
                 </span>
-                <p>massoudfcai@gmail.com</p>
+                <p>mohameddmassoud@gmail.com</p>
               </li>
               <li className={`${classes.info__item}`}>
                 <span>
