@@ -5,6 +5,7 @@ import classes from "../../../styles/form.module.css";
 export default function Form() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
@@ -15,17 +16,25 @@ export default function Form() {
 
     try {
       // Send form data to the server
-      await axios.post("/api/sendMessage", { name, email, message });
+      await axios.post("/api/sendMessage", { name, email, message, subject });
       setSubmitStatus("success");
       setName("");
       setEmail("");
       setMessage("");
+      setSubject("");
     } catch (error) {
       setSubmitStatus("error");
       console.error(error);
     }
 
     setIsSubmitting(false);
+  };
+
+  const handleKeyPress = (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      handleSubmit(e);
+    }
   };
 
   useEffect(() => {
@@ -48,6 +57,16 @@ export default function Form() {
         <p>Failed to send message. Please try again later.</p>
       )}
       <form className={classes.form} onSubmit={handleSubmit}>
+        <div className={classes.form__group}>
+          <input
+            type="text"
+            id="subject"
+            value={subject}
+            onChange={(e) => setSubject(e.target.value)}
+            required
+            placeholder="Subject"
+          />
+        </div>
         <div className={classes.form__group}>
           <input
             type="text"
@@ -75,6 +94,7 @@ export default function Form() {
             onChange={(e) => setMessage(e.target.value)}
             required
             placeholder="Write Your Message"
+            onKeyPress={handleKeyPress}
           />
         </div>
 

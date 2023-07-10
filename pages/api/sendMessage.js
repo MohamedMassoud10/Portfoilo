@@ -13,11 +13,11 @@ export default async function handler(req, res) {
         pass: "yijguffbhxcsyxdg",
       },
     });
-    const { name, email, message } = req.body;
+    const { name, email, message, subject } = req.body;
     const mailOptions = {
       from: "your-email@gmail.com",
       to: "mohameddmassoud@gmail.com",
-      subject: "New Message from Portfoilo Contact Form",
+      subject: subject,
       text: `From:${name}\nEmail: ${email}\n\nMessage:\n${message}`,
     };
 
