@@ -5,7 +5,7 @@ import Link from "next/link";
 import Form from "./Form";
 export default function Contact() {
   return (
-    <div className="contact">
+    <div className="contact" id="contact">
       <div className={`${classes.container}`}>
         <div className={`${classes.contact__content}`}>
           <div className={`${classes.contact__right}`}>

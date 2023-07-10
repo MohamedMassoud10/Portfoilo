@@ -17,7 +17,7 @@ const NAVIGATION_LINKS = [
     display: "Services",
   },
   {
-    path: "/pages/component/UI/portfolio",
+    path: "#portfolio",
     display: "Portfolio",
   },
   {

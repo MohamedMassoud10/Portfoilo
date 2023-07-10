@@ -33,3 +33,10 @@
   color: #01d293;
   background: transparent !important;
 }
+.main__btn__loading {
+  /* Apply the loading animation styles here */
+  /* For example: */
+  pointer-events: none; /* Disable pointer events on the button */
+  opacity: 0.6; /* Reduce the opacity to indicate loading */
+  /* Add any additional animation or styling */
+}

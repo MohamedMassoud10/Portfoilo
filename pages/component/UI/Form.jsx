@@ -33,7 +33,7 @@ export default function Form() {
     if (submitStatus === "success") {
       timeout = setTimeout(() => {
         setSubmitStatus(null);
-      }, 60000); // 1 minute in milliseconds
+      }, 10000);
     }
     return () => {
       clearTimeout(timeout);
@@ -79,11 +79,13 @@ export default function Form() {
         </div>
 
         <button
-          className={classes.main__btn}
+          className={`${classes.main__btn} ${
+            isSubmitting ? classes.main__btn__loading : ""
+          }`}
           type="submit"
           disabled={isSubmitting}
         >
-          Send
+          {isSubmitting ? "Sending..." : "Send"}
         </button>
       </form>
     </div>
