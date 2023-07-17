@@ -46,6 +46,16 @@ const Header = () => {
   }, []);
   const toggleMenu = () =>
     menuRef.current.classList.toggle(`${styles.menu__active}`);
+
+  // Function to change colors
+  // const changcolor = () => {
+  //   const elements = document.querySelectorAll("*");
+  //   if (elements) {
+  //     elements.forEach((element) => {
+  //       element.style.backgroundColor = "red";
+  //     });
+  //   }
+  // };
   return (
     <header className={`${styles.header}`} ref={headerRef}>
       <div className={`${styles.container}`}>
