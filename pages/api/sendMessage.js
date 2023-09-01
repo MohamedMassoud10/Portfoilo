@@ -16,7 +16,7 @@ export default async function handler(req, res) {
     const { name, email, message, subject } = req.body;
     const mailOptions = {
       from: "your-email@gmail.com",
-      to: process.env.GMAIL,
+      to: process.env.PASSWORD,
       subject: subject,
       text: `From:${name}\nEmail: ${email}\n\nMessage:\n${message}`,
     };
