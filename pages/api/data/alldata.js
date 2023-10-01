@@ -45,7 +45,7 @@ export default function handler(req, res) {
       keyword: ["React.js", "Redux toolkit", "JS"],
       liveUrl: "https://supervision-myz1.onrender.com/",
       github:
-        "https://github.com/MohamedMassoud10/Admin-dashboard-website-React.js",
+        "https://github.com/MohamedMassoud10/Admin-dashboard-website-React.jsg",
     },
 
     {
