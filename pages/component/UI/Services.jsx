@@ -25,11 +25,11 @@ const Services = () => {
             <h3 className="mb-0 mt-4">Better Design,</h3>
             <h3 className="mb-4">Better Experience</h3>
             <p>
-              Capable of self-managing in addition to collaborating with others
-              in group projects. Skilled in using HTML5, CSS3,SASS, JavaScript,
-              React, React Hooks, and Redux. Excellent communication skills with
-              clients to establish the best service quality to accomplish
-              customer satisfaction
+            Dedicated to crafting Better Design and elevating user experiences. 
+            Equally adept at independent management and collaborative teamwork. 
+            Proficient in HTML5, CSS3, SASS, JavaScript, React, React Hooks, and Redux. 
+            Exceptional communication skills to deliver top-notch service quality, 
+            ensuring customer satisfaction for a seamless Better Design, Better Experience.
             </p>
           </div>
         </div>

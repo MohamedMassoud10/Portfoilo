@@ -18,11 +18,15 @@ const About = () => {
             <h3>I&apos;m here</h3>
             <h3>to help your next project</h3>
             <p>
-              I have learned a lot of technologies, created many cool websites,
-              collaborated with great developers and contributed to open source
-              projects. So I&apos;m always seeking to have an opportunity that
-              matches my skills, to make the best use of all what I have
-              learned.
+            Crafted to elevate your next project. 
+            I bring a rich tapestry of skills,
+             having delved into various technologies, 
+             crafted impressive websites, and collaborated
+              seamlessly with talented developers. 
+              My journey also includes meaningful contributions 
+              to open source projects. Now, I'm here, poised and 
+              ready to align my expertise with your needs, ensuring your
+               project's triumph and innovation.
             </p>
 
             <div>
