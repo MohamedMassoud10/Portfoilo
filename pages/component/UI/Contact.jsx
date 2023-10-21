@@ -47,7 +47,7 @@ export default function Contact() {
                 <i className="ri-facebook-line"></i>
               </Link>
               <Link
-                href="https://www.linkedin.com/in/mohamed-massoud-%E2%9C%AA-3417b6230/"
+                href="https://www.linkedin.com/in/mohamed-one/"
                 target="_blank"
               >
                 <i className="ri-linkedin-line"></i>
