@@ -14,7 +14,7 @@ import {
 } from "react-icons/fa";
 export default function Hero() {
   return (
-    <section className={`${classes.hero}`}>
+    <section className={`${classes.hero}`} id="Home">
       <div className={`${classes.container}`}>
         <div className={`${classes.sectionContent}`}>
           <div className={`${classes.hero__content}`}>
