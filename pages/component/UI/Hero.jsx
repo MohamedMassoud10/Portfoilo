@@ -38,7 +38,7 @@ export default function Hero() {
               </button>
               <button className={`${classes.second__btn}`}>
                 <Link
-                  href="https://drive.google.com/file/d/1iFzI_MDyb4KZtPnVXAyQkFRoqZ-emn3h/view?usp=sharing"
+                  href="https://drive.google.com/file/d/155N1gsE5mnMgxdNndmx4Y9atkFNr9N1_/view?usp=share_link"
                   target="_blank"
                 >
                   View CV
