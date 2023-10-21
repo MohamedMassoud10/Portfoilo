@@ -79,7 +79,7 @@ const Header = () => {
               <div className={`${styles.right}`}>
                 <p className={`${styles.phone}`}>
                   |<BsFillTelephoneFill />
-                  +21117590703
+                  <a href='tel:+21117590703'>+21117590703</a>
                 </p>
               </div>
             </div>
