@@ -27,13 +27,13 @@ export default function Contact() {
                 <span>
                   <i className="ri-mail-line"></i>
                 </span>
-                <p>mohameddmassoud@gmail.com</p>
+                <a href="mailto:mohameddmassoud@gmail.com"><p>mohameddmassoud@gmail.com</p></a>
               </li>
               <li className={`${classes.info__item}`}>
                 <span>
                   <i className="ri-phone-line"></i>
                 </span>
-                <p>+21117590703</p>
+                <a href='tel:+21117590703'><p>+21117590703</p></a>
               </li>
             </ul>
             <div className={`${classes.social__links}`}>

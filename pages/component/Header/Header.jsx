@@ -5,7 +5,7 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 import { useRef, useEffect } from "react";
 const NAVIGATION_LINKS = [
   {
-    path: "#Home",
+    path: "/",
     display: "Home",
   },
   {
