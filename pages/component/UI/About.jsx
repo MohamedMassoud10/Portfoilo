@@ -69,13 +69,13 @@ const About = () => {
                   href="https://github.com/MohamedMassoud10"
                   target="_blank"
                 >
-                  My Portfolio
+                  My Github
                 </Link>
               </button>
 
               <button className={`${classes.second__btn}`}>
                 <Link
-                  href="https://drive.google.com/file/d/155N1gsE5mnMgxdNndmx4Y9atkFNr9N1_/view?usp=share_link"
+                  href="https://drive.google.com/file/d/1YSsvJwhkpXcsg_sKRbpZBTxMrLWpziqt/view"
                   target="_blank"
                 >
                   view CV
