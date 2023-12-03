@@ -52,9 +52,13 @@ export default function Form() {
   return (
     <div>
       <h1>Contact Form</h1>
-      {submitStatus === "success" && <p>Message sent successfully!</p>}
+      {submitStatus === "success" && (
+        <p className={classes.successfullySend}>Message sent successfully!</p>
+      )}
       {submitStatus === "error" && (
-        <p>Failed to send message. Please try again later.</p>
+        <p className={classes.faildSend}>
+          Failed to send message. Please try again later.
+        </p>
       )}
       <form className={classes.form} onSubmit={handleSubmit}>
         <div className={classes.form__group}>

@@ -38,3 +38,9 @@
   pointer-events: none;
   opacity: 0.6; /* Reduce the opacity to indicate loading */
 }
+.faildSend {
+  color: red;
+}
+.successfullySend {
+  color: #01d293;
+}
