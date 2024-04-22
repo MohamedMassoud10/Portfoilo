@@ -9,19 +9,15 @@ const NAVIGATION_LINKS = [
     display: "Home",
   },
   {
-    path: "#about",
+    path: "/about",
     display: "About",
   },
   {
-    path: "#services",
-    display: "Services",
-  },
-  {
-    path: "#portfolio",
+    path: "/portfolio",
     display: "Portfolio",
   },
   {
-    path: "#contact",
+    path: "/contact",
     display: "Contact",
   },
 ];
@@ -72,14 +68,14 @@ const Header = () => {
           >
             <div className={`${styles.nav__menu}`}>
               {NAVIGATION_LINKS.map((item, index) => (
-                <a href={item.path} key={index}>
+                <Link href={item.path} key={index}>
                   {item.display}
-                </a>
+                </Link>
               ))}
               <div className={`${styles.right}`}>
                 <p className={`${styles.phone}`}>
                   |<BsFillTelephoneFill />
-                  <a href='tel:+21117590703'>+21117590703</a>
+                  <a href="tel:+21117590703">+21117590703</a>
                 </p>
               </div>
             </div>
