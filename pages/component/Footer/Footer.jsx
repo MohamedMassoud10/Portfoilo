@@ -6,8 +6,8 @@ export default function Footer() {
     <footer className={`${styles.footer}`}>
       <div className={`${styles.container}`}>
         <div className={`${styles.textRight}`}>
-          Copyright ©2022 All rights reserved | This template is made with{" "}
-          <BsHeart /> by Mohamed Massoud
+          Copyright ©2022 All rights reserved | This template is made with ❤️ by
+          Mohamed Massoud
         </div>
       </div>
     </footer>

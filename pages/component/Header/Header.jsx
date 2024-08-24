@@ -5,19 +5,19 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 import { useRef, useEffect } from "react";
 const NAVIGATION_LINKS = [
   {
-    path: "/",
+    path: "#",
     display: "Home",
   },
   {
-    path: "/about",
+    path: "#about",
     display: "About",
   },
   {
-    path: "/portfolio",
+    path: "#portfolio",
     display: "Portfolio",
   },
   {
-    path: "/contact",
+    path: "#contact",
     display: "Contact",
   },
 ];
@@ -68,9 +68,9 @@ const Header = () => {
           >
             <div className={`${styles.nav__menu}`}>
               {NAVIGATION_LINKS.map((item, index) => (
-                <Link href={item.path} key={index}>
+                <a href={item.path} key={index}>
                   {item.display}
-                </Link>
+                </a>
               ))}
               <div className={`${styles.right}`}>
                 <p className={`${styles.phone}`}>

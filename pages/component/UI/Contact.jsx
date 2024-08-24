@@ -27,13 +27,21 @@ export default function Contact() {
                 <span>
                   <i className="ri-mail-line"></i>
                 </span>
-                <a href="mailto:mohameddmassoud@gmail.com"><p>mohameddmassoud@gmail.com</p></a>
+                <a href="mailto:mohameddmassoud@gmail.com">
+                  <p>mohameddmassoud@gmail.com</p>
+                </a>
               </li>
               <li className={`${classes.info__item}`}>
                 <span>
                   <i className="ri-phone-line"></i>
                 </span>
-                <a href='tel:+21117590703'><p>+21117590703</p></a>
+                <a
+                  href="https://wa.me/21117590703?text=السلام%20عليكم%20%20انا%20سعيد%20ان%20انا%20بتواصل%20معاك%20بخصوص%20:%0AHey%20i%20am%20happy%20to%20contact%20with%20you%20for%20:"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <p>+21117590703</p>
+                </a>
               </li>
             </ul>
             <div className={`${classes.social__links}`}>

@@ -18,12 +18,16 @@
     "nodemailer": "^6.9.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-helmet": "^6.1.0",
     "react-icons": "^4.7.1",
     "remixicon": "^2.5.0"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^13.0.6",
+    "autoprefixer": "^10.4.20",
     "eslint-config-prettier": "^8.5.0",
-    "kill-port": "^2.0.1"
+    "kill-port": "^2.0.1",
+    "postcss": "^8.4.41",
+    "tailwindcss": "^3.4.10"
   }
 }

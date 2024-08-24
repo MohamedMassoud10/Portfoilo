@@ -12,12 +12,12 @@ const Services = () => {
             <div>
               <ServicesItem title="Frontend" icon="ri-apps-line" />
 
-              <ServicesItem title="Web Development" icon="ri-computer-line" />
+              <ServicesItem title="Backend" icon="ri-code-s-slash-line" />
             </div>
 
             <ServicesItem
-              title="Web Applications Development"
-              icon="ri-code-s-slash-line"
+              title=" Web Applications Development"
+              icon="ri-computer-line "
             />
           </div>
           <div>
@@ -25,11 +25,14 @@ const Services = () => {
             <h3 className="mb-0 mt-4">Better Design,</h3>
             <h3 className="mb-4">Better Experience</h3>
             <p>
-            Dedicated to crafting Better Design and elevating user experiences. 
-            Equally adept at independent management and collaborative teamwork. 
-            Proficient in HTML5, CSS3, SASS, JavaScript, React, React Hooks, and Redux. 
-            Exceptional communication skills to deliver top-notch service quality, 
-            ensuring customer satisfaction for a seamless Better Design, Better Experience.
+              Dedicated to building efficient web applications and enhancing
+              user experiences. Skilled in both independent project management
+              and collaborative teamwork. Proficient in MERN stack technologies,
+              including MongoDB, Express, React, and Node.js, with a strong
+              grasp of modern development practices like React Hooks and Redux.
+              Committed to delivering high-quality code and exceptional service,
+              ensuring smooth and seamless user experiences through better
+              design and functionality.
             </p>
           </div>
         </div>

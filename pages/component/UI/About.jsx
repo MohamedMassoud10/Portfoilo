@@ -3,7 +3,7 @@ import Link from "next/link";
 import SectionSubtitle from "./SectionSubtitle";
 import Image from "next/image";
 import img01 from "../../../public/images/icons8-css3-480.png";
-import img02 from "../../../public/images/update.jpg";
+import img02 from "../../../public/images/node-js.png";
 import img03 from "../../../public/images/icons8-javascript-480.png";
 import img04 from "../../../public/images/icons8-react-native-512.png";
 import classes from "../../../styles/about.module.css";
