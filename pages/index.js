@@ -16,7 +16,6 @@ const Home = () => {
       content="Mohamed Massoud Aspiring Software engineer"
     />
     <meta name="keywords" content="Mohamed Massoud" />{" "}
-    <meta property="og:title" content={title} />
     <meta
       property="og:description"
       content={"Mohamed Massoud Aspiring Software engineer"}
