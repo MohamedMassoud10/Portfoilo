@@ -36,7 +36,7 @@ export default function Hero() {
             <div>
               <button className={`${classes.main__btn}`}>
                 {" "}
-                <Link href="#">Hire me</Link>
+                <a href="#contact">Hire me</a>
               </button>
               <button className={`${classes.second__btn}`}>
                 <Link
