@@ -141,3 +141,6 @@
 .skills__icons svg {
   margin-right: 0px;
 }
+.text__justify {
+  text-align: justify;
+}

@@ -24,7 +24,7 @@ const Services = () => {
             <SectionSubtitle subtitle="What I do" />
             <h3 className="mb-0 mt-4">Better Design,</h3>
             <h3 className="mb-4">Better Experience</h3>
-            <p>
+            <p className={`${classes.text__justify}`}>
               Dedicated to building efficient web applications and enhancing
               user experiences. Skilled in both independent project management
               and collaborative teamwork. Proficient in MERN stack technologies,

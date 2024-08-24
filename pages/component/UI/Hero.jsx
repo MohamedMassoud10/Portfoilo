@@ -21,7 +21,7 @@ export default function Hero() {
             <SectionSubtitle subtitle="Hello" />
             <h2 className={`${classes.typing}`}>I am Mohamed Massoud</h2>
             <h5>Aspiring Software engineer</h5>
-            <p>
+            <p className={`${classes.text__justify}`}>
               I am a self-motivated Full Stack Web Developer with a strong drive
               to learn and explore the latest technologies to create
               high-performance applications. I excel in both independent work

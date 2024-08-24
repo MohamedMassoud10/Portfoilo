@@ -107,3 +107,6 @@
 .left__about__content h6 span {
   margin-right: 10px;
 }
+.text__justify {
+  text-align: justify;
+}

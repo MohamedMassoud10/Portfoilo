@@ -99,3 +99,6 @@ footer {
   border-radius: 2em;
   background: #171f38;
 }
+.text__justify {
+  text-align: justify;
+}

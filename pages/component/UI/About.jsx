@@ -17,7 +17,7 @@ const About = () => {
             <SectionSubtitle subtitle="About me" />
             <h3>I&apos;m here</h3>
             <h3>to help your next project</h3>
-            <p>
+            <p className={`${classes.text__justify}`}>
               Crafted to elevate your next project. I bring a rich tapestry of
               skills, having delved into various technologies, crafted
               impressive websites, and collaborated seamlessly with talented
