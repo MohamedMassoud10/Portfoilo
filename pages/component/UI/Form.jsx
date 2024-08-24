@@ -10,8 +10,21 @@ export default function Form() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
 
+  const isFormValid = () => {
+    return (
+      name.trim() !== "" &&
+      email.trim() !== "" &&
+      subject.trim() !== "" &&
+      message.trim() !== ""
+    );
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (!isFormValid()) {
+      setSubmitStatus("error");
+      return;
+    }
     setIsSubmitting(true);
 
     try {
@@ -57,7 +70,7 @@ export default function Form() {
       )}
       {submitStatus === "error" && (
         <p className={classes.faildSend}>
-          Failed to send message. Please try again later.
+          Failed to send message. Please make sure all fields are filled.
         </p>
       )}
       <form className={classes.form} onSubmit={handleSubmit}>
@@ -107,7 +120,7 @@ export default function Form() {
             isSubmitting ? classes.main__btn__loading : ""
           }`}
           type="submit"
-          disabled={isSubmitting}
+          disabled={isSubmitting || !isFormValid()}
         >
           {isSubmitting ? "Sending..." : "Send"}
         </button>
