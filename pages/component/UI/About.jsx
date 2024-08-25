@@ -73,7 +73,7 @@ const About = () => {
 
               <button className={`${classes.second__btn}`}>
                 <Link
-                  href="https://drive.google.com/file/d/1pblxx0GbFkomLvjaOEJMBvdz4-ix4mZX/view?usp=drive_link"
+                  href="https://drive.google.com/file/d/181A1GGp-cc_A1wAvC9GraX1J-2_rOqFq/view?usp=sharing"
                   target="_blank"
                 >
                   view CV
