@@ -8,7 +8,7 @@ export default function Contact() {
     <div className="contact" id="contact">
       <div className={`${classes.container}`}>
         <div className={`${classes.contact__content}`}>
-          <div className={`${classes.contact__right}`}>
+          <div className={`${classes.contact__right}`} data-aos="fade-right" data-aos-duration="800">
             {" "}
             <SectionSubtitle subtitle="Contact me" />
             <h3 className="mt-4 mb-4">Contact with me</h3>
@@ -21,7 +21,7 @@ export default function Contact() {
                 <span>
                   <i className="ri-map-pin-line"></i>
                 </span>
-                <p>zagazig sharqia</p>
+                <p>Zagazig, Sharkia, Egypt</p>
               </li>
               <li className={`${classes.info__item}`}>
                 <span>
@@ -36,16 +36,16 @@ export default function Contact() {
                   <i className="ri-phone-line"></i>
                 </span>
                 <a
-                  href="https://wa.me/21117590703?text=السلام%20عليكم%20%20انا%20سعيد%20ان%20انا%20بتواصل%20معاك%20بخصوص%20:%0AHey%20i%20am%20happy%20to%20contact%20with%20you%20for%20:"
+                  href="tel:+201117590703"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <p>+21117590703</p>
+                  <p>+201117590703</p>
                 </a>
               </li>
             </ul>
             <div className={`${classes.social__links}`}>
-              <Link href="https://github.com/MohamedMassoud10" target="_blank">
+              <Link href="https://github.com/MohamedMassoud10" target="_blank" title="GitHub">
                 <i className="ri-github-line github"></i>
               </Link>
               <Link
@@ -57,18 +57,14 @@ export default function Contact() {
               <Link
                 href="https://www.linkedin.com/in/mohamed-one/"
                 target="_blank"
+                title="LinkedIn"
               >
                 <i className="ri-linkedin-line"></i>
               </Link>
-              <Link
-                href="https://twitter.com/its_massoud_11?t=QeRg4eruzfLwlScUePbmQg&s=09"
-                target="_blank"
-              >
-                <i className="ri-twitter-line"></i>
-              </Link>
+             
             </div>
           </div>
-          <div className={`${classes.contact__left}`}>
+          <div className={`${classes.contact__left}`} data-aos="fade-left" data-aos-duration="800">
             <Form />
           </div>
         </div>

@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
 import classes from "../../../styles/form.module.css";
 
 export default function Form() {
@@ -26,10 +25,22 @@ export default function Form() {
       return;
     }
     setIsSubmitting(true);
+    setSubmitStatus(null);
 
     try {
       // Send form data to the server
-      await axios.post("/api/sendMessage", { name, email, message, subject });
+      const response = await fetch("/api/sendMessage", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ name, email, message, subject }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to send message");
+      }
+
       setSubmitStatus("success");
       setName("");
       setEmail("");
@@ -38,9 +49,9 @@ export default function Form() {
     } catch (error) {
       setSubmitStatus("error");
       console.error(error);
+    } finally {
+      setIsSubmitting(false);
     }
-
-    setIsSubmitting(false);
   };
 
   const handleKeyPress = (e) => {
@@ -66,52 +77,71 @@ export default function Form() {
     <div>
       <h1>Contact Form</h1>
       {submitStatus === "success" && (
-        <p className={classes.successfullySend}>Message sent successfully!</p>
+        <p className={classes.successfullySend} role="alert" aria-live="polite">
+          Message sent successfully!
+        </p>
       )}
       {submitStatus === "error" && (
-        <p className={classes.faildSend}>
+        <p className={classes.faildSend} role="alert" aria-live="assertive">
           Failed to send message. Please make sure all fields are filled.
         </p>
       )}
-      <form className={classes.form} onSubmit={handleSubmit}>
+      <form className={classes.form} onSubmit={handleSubmit} noValidate>
         <div className={classes.form__group}>
+          <label htmlFor="subject" className="sr-only">Subject</label>
           <input
             type="text"
             id="subject"
+            name="subject"
             value={subject}
             onChange={(e) => setSubject(e.target.value)}
             required
             placeholder="Subject"
+            aria-label="Message subject"
+            aria-required="true"
           />
         </div>
         <div className={classes.form__group}>
+          <label htmlFor="name" className="sr-only">Your Name</label>
           <input
             type="text"
             id="name"
+            name="name"
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
             placeholder="Enter Your Name"
+            aria-label="Your name"
+            aria-required="true"
           />
         </div>
         <div className={classes.form__group}>
+          <label htmlFor="email" className="sr-only">Your Email</label>
           <input
             type="email"
             id="email"
+            name="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
             placeholder="Enter Your Email"
+            aria-label="Your email address"
+            aria-required="true"
           />
         </div>
         <div className={classes.form__group}>
+          <label htmlFor="message" className="sr-only">Your Message</label>
           <textarea
             id="message"
+            name="message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             required
             placeholder="Write Your Message"
             onKeyPress={handleKeyPress}
+            aria-label="Your message"
+            aria-required="true"
+            rows="5"
           />
         </div>
 
@@ -121,6 +151,7 @@ export default function Form() {
           }`}
           type="submit"
           disabled={isSubmitting || !isFormValid()}
+          aria-label={isSubmitting ? "Sending message" : "Send message"}
         >
           {isSubmitting ? "Sending..." : "Send"}
         </button>

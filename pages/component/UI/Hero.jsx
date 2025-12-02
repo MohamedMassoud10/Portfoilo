@@ -17,52 +17,37 @@ export default function Hero() {
     <section className={`${classes.hero}`} id="Home">
       <div className={`${classes.container}`}>
         <div className={`${classes.sectionContent}`}>
-          <div className={`${classes.hero__content}`}>
+          <div className={`${classes.hero__content}`} data-aos="fade-right" data-aos-duration="800">
             <SectionSubtitle subtitle="Hello" />
             <h2 className={`${classes.typing}`}>I am Mohamed Massoud</h2>
-            <h5>Aspiring Software engineer</h5>
+            <h5>Software Engineer</h5>
             <p className={`${classes.text__justify}`}>
-              I am a self-motivated Full Stack Web Developer with a strong drive
-              to learn and explore the latest technologies to create
-              high-performance applications. I excel in both independent work
-              and team collaborations. Skilled in front-end technologies like
-              HTML5, CSS3, SASS, JavaScript, React, React Hooks, Redux, and
-              Next.js, as well as back-end development with Node.js, Express.js,
-              and MongoDB. I am proficient in building and managing RESTful APIs
-              and working with the full MERN stack. With excellent communication
-              skills, I ensure top-quality service to meet and exceed customer
-              expectations.
+              Full-Stack Developer passionate about building scalable and user-friendly applications with React, Node.js, React Native, and AI-powered tools. Seeking to contribute to innovative teams and impactful projects.
             </p>
+          
             <div>
               <button className={`${classes.main__btn}`}>
                 {" "}
-                <a href="#contact">Hire me</a>
-              </button>
-              <button className={`${classes.second__btn}`}>
-                <Link
-                  href="https://drive.google.com/file/d/1n3_z1hfPbyBRTn_b-ZqdTCm93BHi1TPT/view?usp=sharing"
-                  target="_blank"
-                >
-                  View CV
-                </Link>
+                <a href="#contact" aria-label="Navigate to contact section">Hire me</a>
               </button>
             </div>
           </div>
-          <div className={`${classes.hero__image}`}>
+          <div className={`${classes.hero__image}`} data-aos="fade-left" data-aos-duration="800">
             <Image
-              alt="Portfolio-Image"
+              alt="Mohamed Massoud - Software Engineer"
               src={PortfolioImage}
               width="250"
               height="250"
+              priority
             />
             <div className={`${classes.hero__skills}`}>
               <h6>Skills : </h6>
               <div className={`${classes.skills__icons}`}>
-                <FaCss3Alt />
-                <FaHtml5 />
-                <FaJsSquare />
-                <FaReact />
-                <FaNode />
+                <FaCss3Alt aria-label="CSS3" />
+                <FaHtml5 aria-label="HTML5" />
+                <FaJsSquare aria-label="JavaScript" />
+                <FaReact aria-label="React" />
+                <FaNode aria-label="Node.js" />
               </div>
             </div>
           </div>

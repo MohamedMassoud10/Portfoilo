@@ -7,7 +7,7 @@
   justify-content: center;
   align-items: center;
   padding: 20px;
-  z-index: 1000;
+  z-index: 9999;
   animation: fadeIn 0.2s ease-out;
 }
 
@@ -79,7 +79,7 @@
 .header {
   padding: 30px 30px 20px;
   border-bottom: 1px solid rgba(1, 210, 147, 0.1);
-  background: rgba(0, 0, 0, 0.2);
+
 }
 
 .heading {
@@ -202,7 +202,7 @@
 
 .imageWrapper :global(img) {
   object-fit: contain;
-  background: #0a0f1a;
+
 }
 
 @media only screen and (max-width: 768px) {

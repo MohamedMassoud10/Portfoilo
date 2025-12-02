@@ -13,18 +13,12 @@ const About = () => {
     <div id="about">
       <div className={`${classes.container}`}>
         <div className={`${classes.about__content}`}>
-          <div className={`${classes.left__about__content}`}>
+          <div className={`${classes.left__about__content}`} data-aos="fade-right" data-aos-duration="800">
             <SectionSubtitle subtitle="About me" />
             <h3>I&apos;m here</h3>
             <h3>to help your next project</h3>
             <p className={`${classes.text__justify}`}>
-              Crafted to elevate your next project. I bring a rich tapestry of
-              skills, having delved into various technologies, crafted
-              impressive websites, and collaborated seamlessly with talented
-              developers. My journey also includes meaningful contributions to
-              open source projects. Now, Im here, poised and ready to align my
-              expertise with your needs, ensuring your projects triumph and
-              innovation.
+              Full-Stack & Mobile Developer with hands-on experience building production-level applications using React, React Native, Node.js, and SQL/NoSQL databases. Skilled in designing scalable architectures, implementing clean UI/UX, and integrating backend APIs. Seeking opportunities to contribute to high-impact projects and innovative teams.
             </p>
 
             <div>
@@ -73,7 +67,7 @@ const About = () => {
 
               <button className={`${classes.second__btn}`}>
                 <Link
-                  href="https://drive.google.com/file/d/181A1GGp-cc_A1wAvC9GraX1J-2_rOqFq/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1bvRO8jx0rSRj6tHMLvYkC-lKcfXCIHzX/view?usp=sharing"
                   target="_blank"
                 >
                   view CV
@@ -81,32 +75,40 @@ const About = () => {
               </button>
             </div>
           </div>
-          <div className={`${classes.about__img__gallery}`}>
+          <div className={`${classes.about__img__gallery}`} data-aos="fade-left" data-aos-duration="800">
             <div>
               <div
                 className={`${classes.about__img} ${classes.about__img__box}`}
+                data-aos="zoom-in"
+                data-aos-delay="100"
               >
-                <Image src={img01} alt="about-img" />
+                <Image src={img01} alt="CSS3 technology icon" />
               </div>
 
               <div
                 className={`${classes.about__img} ${classes.about__img__box}`}
+                data-aos="zoom-in"
+                data-aos-delay="200"
               >
-                <Image src={img02} alt="about-img" />
+                <Image src={img02} alt="Node.js technology icon" />
               </div>
             </div>
 
             <div>
               <div
                 className={`${classes.about__img} ${classes.about__img__box}`}
+                data-aos="zoom-in"
+                data-aos-delay="300"
               >
-                <Image src={img03} alt="about-img" />
+                <Image src={img03} alt="JavaScript technology icon" />
               </div>
 
               <div
                 className={`${classes.about__img} ${classes.about__img__box}`}
+                data-aos="zoom-in"
+                data-aos-delay="400"
               >
-                <Image src={img04} alt="about-img" />
+                <Image src={img04} alt="React Native technology icon" />
               </div>
             </div>
           </div>

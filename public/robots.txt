@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://massoud-one.vercel.app/sitemap.xml
+

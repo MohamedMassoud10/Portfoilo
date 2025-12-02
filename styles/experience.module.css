@@ -1,0 +1,154 @@
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+    margin: auto;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+    margin: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+    margin: auto;
+  }
+}
+
+.experience__content {
+  margin-top: 110px;
+  padding: 0 15px;
+}
+
+.experience__list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+  padding-left: 3rem;
+}
+
+.experience__list::before {
+  content: '';
+  position: absolute;
+  left: 0.75rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, #01d293, rgba(1, 210, 147, 0.3));
+}
+
+.experience__item {
+  position: relative;
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid #01d293;
+  transition: 0.3s;
+}
+
+.experience__timeline__point {
+  position: absolute;
+  left: -3rem;
+  top: 2rem;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #01d293;
+  border: 3px solid #0e1630;
+  z-index: 1;
+  box-shadow: 0 0 0 3px rgba(1, 210, 147, 0.2);
+}
+
+.experience__content__wrapper {
+  width: 100%;
+}
+
+.experience__item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(1, 210, 147, 0.2);
+}
+
+.experience__header {
+  margin-bottom: 1rem;
+}
+
+.experience__header h4 {
+  color: #01d293;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.experience__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #808dad;
+}
+
+.experience__type,
+.experience__duration,
+.experience__date {
+  color: #808dad;
+}
+
+.experience__description {
+  color: #a2a8b8;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+@media (max-width: 992px) {
+  .experience__content {
+    margin: 0 15px;
+    margin-top: 50px;
+  }
+  
+  .experience__list {
+    padding-left: 2.5rem;
+  }
+  
+  .experience__list::before {
+    left: 0.5rem;
+  }
+  
+  .experience__timeline__point {
+    left: -2.5rem;
+    width: 12px;
+    height: 12px;
+  }
+  
+  .experience__item {
+    padding: 1.5rem;
+  }
+  
+  .experience__header h4 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 667px) {
+  .experience__list {
+    padding-left: 2rem;
+  }
+  
+  .experience__list::before {
+    left: 0.4rem;
+  }
+  
+  .experience__timeline__point {
+    left: -2rem;
+    width: 10px;
+    height: 10px;
+  }
+  
+  .experience__meta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
