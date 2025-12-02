@@ -103,6 +103,17 @@ export default function handler(req, res) {
     },
     {
       id: "05",
+      title: "Ideas & Concepts Group – Company Website",
+      img: "/images/i_c/portfolio.png",
+      category: "MyProjects",
+      keyword: ["React", "TailwindCSS"],
+      description:
+        "The official corporate website for Ideas & Concepts Group. Built with React and TailwindCSS, featuring company information, services, portfolio showcase, and a fully functional contact form integrated with backend endpoints. A fast, responsive, and modern frontend experience aligned with the company's branding.",
+      liveUrl: "https://i-c.com.sa/",
+      github: "",
+    },
+    {
+      id: "06",
       title: "Portfolio",
       img: "/images/portfolio.png",
       category: "MyProjects",
@@ -111,7 +122,7 @@ export default function handler(req, res) {
       github: "https://github.com/MohamedMassoud10/Portfoilo",
     },
     {
-      id: "06",
+      id: "07",
       title: "E-Commerce Website",
       img: "/images/E-commerce.png",
       category: "MyProjects",
@@ -121,7 +132,7 @@ export default function handler(req, res) {
         "https://github.com/MohamedMassoud10/E-commerce-with-react-and-redux-toolkit",
     },
     {
-      id: "07",
+      id: "08",
       title: "Landing page",
       img: "/images/landingPage.png",
       category: "MyProjects",
@@ -130,7 +141,7 @@ export default function handler(req, res) {
       github: "https://github.com/MohamedMassoud10/kasper",
     },
     {
-      id: "08",
+      id: "09",
       title: "Quiz Application",
       img: "/images/QuizaApp.png",
       category: "MyProjects",
@@ -139,7 +150,7 @@ export default function handler(req, res) {
       github: "https://github.com/MohamedMassoud10/Quiz-App-using-react.js",
     },
     {
-      id: "09",
+      id: "10",
       title: "Admin Dashboard",
       img: "/images/ADB.jpg",
       category: "MyProjects",
@@ -150,7 +161,7 @@ export default function handler(req, res) {
     },
 
     {
-      id: "10",
+      id: "11",
       title: "Note Application",
       img: "/images/noteAP.png",
       category: "MyProjects",
@@ -159,7 +170,7 @@ export default function handler(req, res) {
       github: "https://github.com/MohamedMassoud10/React-Note-App",
     },
     {
-      id: "11",
+      id: "12",
       title: "to do list Application",
       img: "/images/toDoList.png",
       category: "MyProjects",
@@ -169,7 +180,7 @@ export default function handler(req, res) {
     },
 
     {
-      id: "12",
+      id: "13",
       title: "Tic Tac Toe Game",
       img: "/images/tictactoe.png",
       category: "MyProjects",
