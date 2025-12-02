@@ -1,0 +1,266 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  z-index: 1000;
+  animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal {
+  background: linear-gradient(135deg, #171f38 0%, #1a2332 100%);
+  border-radius: 20px;
+  padding: 0;
+  width: min(950px, 95%);
+  max-height: 90vh;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(1, 210, 147, 0.1);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.closeButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: none;
+  background: rgba(1, 210, 147, 0.1);
+  color: #01d293;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(1, 210, 147, 0.2);
+}
+
+.closeButton:hover {
+  background: rgba(1, 210, 147, 0.2);
+  color: #fff;
+  transform: rotate(90deg);
+  border-color: #01d293;
+}
+
+.closeButton svg {
+  width: 20px;
+  height: 20px;
+}
+
+.header {
+  padding: 30px 30px 20px;
+  border-bottom: 1px solid rgba(1, 210, 147, 0.1);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.heading {
+  color: #01d293;
+  margin: 0 0 12px 0;
+  padding-right: 50px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.description {
+  color: #b0b8d1;
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  padding-right: 50px;
+}
+
+.swiper {
+  width: 100%;
+  flex: 1;
+  padding: 30px 30px 50px;
+  overflow: visible;
+}
+
+.swiper :global(.swiper-button-next),
+.swiper :global(.swiper-button-prev) {
+  color: #01d293;
+  background: rgba(23, 31, 56, 0.6);
+  backdrop-filter: blur(8px);
+  width: 40px;
+  height: 40px;
+  border-radius: 50% !important;
+  overflow: hidden;
+  border: 1px solid rgba(1, 210, 147, 0.2);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: -20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  font-size: 0;
+  line-height: 0;
+}
+
+.swiper :global(.swiper-button-next):after,
+.swiper :global(.swiper-button-prev):after {
+  content: "";
+  width: 10px;
+  height: 16px;
+  background-image: url("data:image/svg+xml,%3Csvg width='8' height='14' viewBox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L7 7L1 13' stroke='%2301d293' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  font-size: 0;
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.9;
+}
+
+.swiper :global(.swiper-button-prev):after {
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.swiper :global(.swiper-button-next):hover,
+.swiper :global(.swiper-button-prev):hover {
+  background: rgba(1, 210, 147, 0.15);
+  border-color: rgba(1, 210, 147, 0.4);
+  box-shadow: 0 4px 12px rgba(1, 210, 147, 0.3);
+  transform: scale(1.05);
+}
+
+.swiper :global(.swiper-button-next):hover:after,
+.swiper :global(.swiper-button-prev):hover:after {
+  opacity: 1;
+}
+
+.swiper :global(.swiper-button-disabled) {
+  opacity: 0.3;
+}
+
+.swiper :global(.swiper-pagination) {
+  bottom: 10px !important;
+}
+
+.swiper :global(.swiper-pagination-bullet) {
+  background: #94a3b8;
+  opacity: 0.5;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  transition: all 0.3s ease;
+}
+
+.swiper :global(.swiper-pagination-bullet-active) {
+  background: #01d293;
+  opacity: 1;
+  width: 24px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(1, 210, 147, 0.5);
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 60%;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(1, 210, 147, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.imageWrapper:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+}
+
+.imageWrapper :global(img) {
+  object-fit: contain;
+  background: #0a0f1a;
+}
+
+@media only screen and (max-width: 768px) {
+  .backdrop {
+    padding: 10px;
+  }
+
+  .modal {
+    max-height: 95vh;
+    border-radius: 16px;
+  }
+
+  .header {
+    padding: 20px 20px 15px;
+  }
+
+  .heading {
+    font-size: 1.2rem;
+    padding-right: 45px;
+  }
+
+  .description {
+    font-size: 0.85rem;
+    padding-right: 45px;
+  }
+
+  .closeButton {
+    top: 15px;
+    right: 15px;
+    width: 36px;
+    height: 36px;
+  }
+
+  .closeButton svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .swiper {
+    padding: 20px 20px 45px;
+  }
+
+  .swiper :global(.swiper-button-next),
+  .swiper :global(.swiper-button-prev) {
+    width: 36px;
+    height: 36px;
+    margin-top: -18px;
+  }
+
+  .swiper :global(.swiper-button-next):after,
+  .swiper :global(.swiper-button-prev):after {
+    width: 8px;
+    height: 14px;
+  }
+
+  .imageWrapper {
+    padding-top: 65%;
+    border-radius: 12px;
+  }
+}
+

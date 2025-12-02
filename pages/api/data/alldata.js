@@ -2,6 +2,34 @@ export default function handler(req, res) {
   res.status(200).json([
     {
       id: "01",
+      title: "Sahm – E-Commerce Platform",
+      img: "/images/sahm/main.png",
+      category: "MyProjects",
+      keyword: ["React", "TypeScript", "Vite", "TailwindCSS", "Node.js"],
+      description:
+        "A full e-commerce web application with a complete admin dashboard. Admins can manage sellers, users, admins, products, and orders. Built with modern technologies and scalable architecture.",
+      liveUrl: "",
+      github: "",
+      galleryImages: [
+        "/images/sahm/main.png",
+       
+        "/images/sahm/image-2.png",
+        "/images/sahm/image-3.png",
+        "/images/sahm/image-4.png",
+        "/images/sahm/image-5.png",
+        "/images/sahm/image-6.png",
+        "/images/sahm/image-7.png",
+        "/images/sahm/dashboard-image-1.png",
+        "/images/sahm/dashboard-image-2.png",
+        "/images/sahm/dashboard-image-3.png",
+        "/images/sahm/dashboard-image-4.png",
+        "/images/sahm/dashboard-image-5.png",
+        "/images/sahm/dashboard-image-6.png",
+        "/images/sahm/dashboard-image-7.png",
+      ],
+    },
+    {
+      id: "02",
       title: "Portfolio",
       img: "/images/portfolio.png",
       category: "MyProjects",
@@ -10,7 +38,7 @@ export default function handler(req, res) {
       github: "https://github.com/MohamedMassoud10/Portfoilo",
     },
     {
-      id: "02",
+      id: "03",
       title: "E-Commerce Website",
       img: "/images/E-commerce.png",
       category: "MyProjects",
@@ -20,7 +48,7 @@ export default function handler(req, res) {
         "https://github.com/MohamedMassoud10/E-commerce-with-react-and-redux-toolkit",
     },
     {
-      id: "03",
+      id: "04",
       title: "Landing page",
       img: "/images/landingPage.png",
       category: "MyProjects",
@@ -29,7 +57,7 @@ export default function handler(req, res) {
       github: "https://github.com/MohamedMassoud10/kasper",
     },
     {
-      id: "04",
+      id: "05",
       title: "Quiz Application",
       img: "/images/QuizaApp.png",
       category: "MyProjects",
@@ -38,7 +66,7 @@ export default function handler(req, res) {
       github: "https://github.com/MohamedMassoud10/Quiz-App-using-react.js",
     },
     {
-      id: "05",
+      id: "06",
       title: "Admin Dashboard",
       img: "/images/ADB.jpg",
       category: "MyProjects",
@@ -49,7 +77,7 @@ export default function handler(req, res) {
     },
 
     {
-      id: "06",
+      id: "07",
       title: "Note Application",
       img: "/images/noteAP.png",
       category: "MyProjects",
@@ -58,7 +86,7 @@ export default function handler(req, res) {
       github: "https://github.com/MohamedMassoud10/React-Note-App",
     },
     {
-      id: "07",
+      id: "08",
       title: "to do list Application",
       img: "/images/toDoList.png",
       category: "MyProjects",
@@ -68,7 +96,7 @@ export default function handler(req, res) {
     },
 
     {
-      id: "08",
+      id: "09",
       title: "Tic Tac Toe Game",
       img: "/images/tictactoe.png",
       category: "MyProjects",

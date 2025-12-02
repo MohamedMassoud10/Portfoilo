@@ -13,6 +13,13 @@
   background: transparent;
 }
 
+.portfolio__description {
+  color: #b0b8d1;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
 .portfolio__img {
   margin-top: 30px;
 
@@ -31,6 +38,9 @@
   margin-right: 10px;
   border-radius: 5px;
   cursor: pointer;
+  white-space: nowrap;
+  display: inline-block;
+  margin-bottom: 4px;
 }
 
 .portfolio__live {
@@ -69,17 +79,23 @@
   transition: 1s;
   cursor: pointer;
   margin-top: 25px;
+  color: #01d293;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
 }
 .main__btn:hover {
   background-color: #13cc41c7;
+  color: #ffffff;
 }
-.main__btn:hover a {
-  color: white;
+.main__btn:focus-visible {
+  outline: 2px solid #01d293;
+  outline-offset: 3px;
 }
-.main__btn a {
-  text-decoration: none;
-  color: #01d293;
-  background: transparent !important;
+.main__btn + .main__btn {
+  margin-left: 12px;
 }
 .portfolio__live a i {
   background: #171f38;

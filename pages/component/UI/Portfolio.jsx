@@ -31,6 +31,8 @@ export default function Portfolio() {
                   keyword={item.keyword}
                   liveUrl={item.liveUrl}
                   github={item.github}
+                  description={item.description}
+                  galleryImages={item.galleryImages}
                 />
               </div>
             ))}
